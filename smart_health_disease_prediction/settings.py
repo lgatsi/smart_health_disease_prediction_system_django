@@ -69,14 +69,25 @@ WSGI_APPLICATION = 'smart_health_disease_prediction.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+#DATABASES = {
+ #   'default': {
+ #       'ENGINE': 'django.db.backends.mysql',
+ #       'NAME': 'smart_health_disease_prediction_db',
+ #       'USER':'root',
+ #       'PASSWORD':'',
+ #       'HOST':'127.0.0.1',
+ #       'PORT':'3306'
+ #   }
+#}
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'smart_health_disease_prediction_db',
-        'USER':'root',
-        'PASSWORD':'',
-        'HOST':'127.0.0.1',
-        'PORT':'3306'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd19fm8mekioot0',
+        'USER':'ublbauhyeoebvz',
+        'PASSWORD':'7c22b8c7edd3835bb661a839b931808fa0a16250e0d6a1268cf437d58ed33660',
+        'HOST':'ec2-54-208-11-146.compute-1.amazonaws.com',
+        'PORT':'5432'
     }
 }
 
